@@ -3,9 +3,9 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import React, {Component} from 'react';
 import ShoppingCart from './ShoppingCart';
+import ItemListConteiner from './ItemListConteiner';
 
 
 function NavBar() {
@@ -22,17 +22,9 @@ function NavBar() {
           >
             <Nav.Link href="#action1">Home</Nav.Link>
             <Nav.Link href="#action2">About</Nav.Link>
-            <NavDropdown title="Productos" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Remeras</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Pantalones
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action5">Zapatillas</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action6">
-                Mayorista
-              </NavDropdown.Item>
-            </NavDropdown>
+            
+            <ItemListConteiner></ItemListConteiner>
+
             <Nav.Link href="#" disabled>
               Contacto
             </Nav.Link>
