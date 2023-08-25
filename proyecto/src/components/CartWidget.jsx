@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ShoppingCart() {
+function CartWidget() {
   return (
     <div> 
           <button type="button" class="btn btn-light" style={{ fontSize: 15 }}>
@@ -14,4 +14,4 @@ function ShoppingCart() {
   )
 }
 
-export default ShoppingCart
+export default CartWidget

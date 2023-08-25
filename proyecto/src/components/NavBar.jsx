@@ -4,8 +4,8 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import React, {Component} from 'react';
-import ShoppingCart from './ShoppingCart';
-import ItemListConteiner from './ItemListConteiner';
+import CartWidget from './CartWidget';
+import DropDown from './DropDown';
 
 
 function NavBar() {
@@ -23,14 +23,16 @@ function NavBar() {
             <Nav.Link href="#action1">Home</Nav.Link>
             <Nav.Link href="#action2">About</Nav.Link>
             
-            <ItemListConteiner></ItemListConteiner>
+            <DropDown />
 
             <Nav.Link href="#" disabled>
               Contacto
             </Nav.Link>
                 
           </Nav>
-          <ShoppingCart></ShoppingCart>
+
+          <CartWidget />
+
           <div>
           
           </div>
